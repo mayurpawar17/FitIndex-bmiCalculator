@@ -21,6 +21,7 @@ class onBoardingScreenActivity : AppCompatActivity() {
 
             btnNext.setOnClickListener {
                 val username = etInputName.text.toString()
+
                 if (username.isEmpty()){
                     Toast.makeText(this,"Please your enter name",Toast.LENGTH_LONG).show()
                 }else {

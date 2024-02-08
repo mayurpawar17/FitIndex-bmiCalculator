@@ -19,11 +19,6 @@
             android:name=".onBoardingScreenActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:exported="false"
-            android:label="@string/title_activity_splash_screen"
-            android:theme="@style/Theme.BMIcalculator" />
-        <activity
             android:name=".splashScreen"
             android:exported="true">
             <intent-filter>

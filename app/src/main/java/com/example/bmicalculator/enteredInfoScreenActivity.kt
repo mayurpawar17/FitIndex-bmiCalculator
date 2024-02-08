@@ -39,7 +39,6 @@ class enteredInfoScreenActivity : AppCompatActivity() {
         val username = intent.getStringExtra("message_key")
         tvUsername.text = username
         tvUsername.setText("Hi $username")
-        textSet()
 
 
 
@@ -76,33 +75,7 @@ class enteredInfoScreenActivity : AppCompatActivity() {
         textViewResult.text=bmi.toString()
     }
 
-    private fun textSet(){
-        val text1 =findViewById<TextView>(R.id.text1)
-        val text2=findViewById<TextView>(R.id.text2)
-        val text3=findViewById<TextView>(R.id.text3)
-        val text4=findViewById<TextView>(R.id.text4)
-        val text5=findViewById<TextView>(R.id.text5)
-        val text6=findViewById<TextView>(R.id.text6)
 
-        val Underweight="Underweight"
-        val NormalWeight ="Normal Weight"
-        val Pre_obesity =" Pre-obesity"
-        val  Obesity_Class_l=" Obesity Class l"
-        val  Obesity_Class_ll=" Obesity Class ll"
-        val  Obesity_Class_lll=" Obesity Class lll"
-
-
-
-
-        text1.text = "Below 18.5   $Underweight"
-        text2.text = "18.5 - 24.9    $NormalWeight"
-        text3.text = "25.0 - 29.9    $Pre_obesity"
-        text4.text = "30.0 - 34.9   $Obesity_Class_l"
-        text5.text = "35.0 - 39.9   $Obesity_Class_ll"
-        text6.text = "Above 40    $Obesity_Class_lll"
-
-
-    }
 
 
     private fun showExitDialog() {

@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">BMIcalculator</string>
     <string name="title_activity_splash_screen">splashScreen</string>
+    <string name="quote">Measure your journey \nto a better you</string>
 
 
 </resources>

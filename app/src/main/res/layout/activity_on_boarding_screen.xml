@@ -12,14 +12,14 @@
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="50dp"
         android:src="@drawable/fitindexlogo" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="350dp"
         android:layout_height="264dp"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         android:elevation="10dp"
         app:cardCornerRadius="27dp">
 
@@ -39,9 +39,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="start"
         android:layout_marginStart="45dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="50dp"
         android:fontFamily="@font/opensans"
-        android:text="Measure your journey \nto a better you"
+        android:text="@string/quote"
         android:textColor="@color/black"
         android:textSize="28sp"
         android:textStyle="bold" />
@@ -64,7 +64,7 @@
         <EditText
             android:id="@+id/etInputName"
             android:layout_width="300dp"
-            android:layout_height="40dp"
+            android:layout_height="48dp"
             android:layout_gravity="start"
             android:background="@drawable/boarder"
             android:ems="10"
