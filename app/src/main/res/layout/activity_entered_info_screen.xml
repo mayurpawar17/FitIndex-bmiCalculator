@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".enteredInfoScreenActivity">
+
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="@font/opensans"
+        android:text="Hi Mayur" />
+
+    <ImageView
+        android:id="@+id/exitBtn"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/baseline_exit_to_app_24" />
+
+
+
+    <TextView
+        android:id="@+id/tvHeight"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_below="@id/tvUsername"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="@font/opensans"
+        android:text="What’s your Height (cm)?" />
+
+    <EditText
+        android:id="@+id/etHeight"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="start"
+        android:paddingLeft="10dp"
+        android:hint="0"
+        android:layout_below="@id/tvHeight"
+        android:ems="10"
+        android:background="@drawable/boarder"
+        android:inputType="numberDecimal"
+        />
+
+
+    <TextView
+        android:id="@+id/tvWeight"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_below="@id/etHeight"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="@font/opensans"
+        android:inputType="number"
+        android:text="What’s your Weight (kg)?" />
+
+    <EditText
+        android:id="@+id/etWeight"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="start"
+        android:paddingLeft="10dp"
+        android:hint="0"
+        android:layout_below="@id/tvWeight"
+        android:ems="10"
+        android:background="@drawable/boarder"
+        android:inputType="numberDecimal"
+        />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etWeight"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/opensans"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewResult"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/opensans"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/cText1"
+            android:background="@drawable/boarder"
+            android:text="Below 18.5    Underweight" />
+        <TextView
+            android:id="@+id/text2"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/opensans"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/cText2"
+            android:background="@drawable/boarder"
+            android:text="18.5 - 24.9    Normal Weight" />
+        <TextView
+            android:id="@+id/text3"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/opensans"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/cText3"
+            android:background="@drawable/boarder"
+            android:text="25.0 - 29.9    Pre-obesity" />
+        <TextView
+            android:id="@+id/text4"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/opensans"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/cText4"
+            android:background="@drawable/boarder"
+            android:text="30.0 - 34.9   Obesity Class l" />
+        <TextView
+            android:id="@+id/text5"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/opensans"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/cText5"
+            android:background="@drawable/boarder"
+            android:text="35.0 - 39.9   Obesity Class ll" />
+        <TextView
+            android:id="@+id/text6"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/opensans"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/cText6"
+            android:background="@drawable/boarder"
+            android:text="Above 40    Obesity Class lll" />
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_marginBottom="20dp"
+        android:layout_width="300dp"
+        android:layout_marginStart="45dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/mainColor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:fontFamily="@font/opensans"
+        android:text="Calculate BMI" />
+
+
+</RelativeLayout>

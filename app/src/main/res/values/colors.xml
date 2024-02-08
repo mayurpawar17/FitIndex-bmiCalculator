@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="mainColor">#204EB2</color>
+
+    <color name="cText1">#89E3F6</color>
+    <color name="cText2">#51C786</color>
+    <color name="cText3">#EDE648</color>
+    <color name="cText4">#FDA72A</color>
+    <color name="cText5">#FC5A20</color>
+    <color name="cText6">#FC2A31</color>
+</resources>
